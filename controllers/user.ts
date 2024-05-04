@@ -1,6 +1,5 @@
 import express, { Request, Response } from "express";
 import { data_user } from "../Entity/data_user";
-import { DataSource } from "typeorm";
 import { connectDB } from "../dbConnection";
 
 const app =express();
@@ -91,5 +90,8 @@ export const homeDetails = async (req: Request, res: Response) => {
     //let data =await repository.clear();
   
     //response show on server
-    res.send(data)
+    res.json({
+      test:"ok",
+      data:data
+    })
   };
