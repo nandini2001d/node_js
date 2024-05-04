@@ -6,12 +6,12 @@ dotev.config();
 
  export const connectDB = new DataSource({
  type:"mysql",
- host:"127.0.0.1",
+ host:"todolist.cpygkmakwokt.eu-north-1.rds.amazonaws.com",
  port:3306,
- url:"jdbc:mysql://127.0.0.1:3306/data_user",
+ //url:"jdbc:mysql://todolist.cpygkmakwokt.eu-north-1.rds.amazonaws.com:3306/data_use",
  password:"pritiraju",
  username:"root",
- database:"data_user",
+ database:"data_use",
 
  //show all sql and form operation on the database
  //logging:true,
